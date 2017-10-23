@@ -4,7 +4,7 @@ A small node.js library for authenticating with the [Pocket](https://getpocket.c
 
 [![Build Status](https://api.travis-ci.org/mheap/node-pocket-auth.svg?branch=master)](https://travis-ci.org/mheap/node-pocket-auth)
 
-`pocket-auth` requires a minimum NodeJS version of 6.9.4
+`pocket-auth` requires a minimum NodeJS version of 7.6
 
 ## The Pocket Auth Flow
 
