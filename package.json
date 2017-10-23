@@ -1,4 +1,7 @@
 {
+    "name": "pocket-auth",
+    "description": "Authentication library for getpocket.com",
+    "version": "1.0.0",
     "scripts": {
         "test": "nyc mocha",
         "lint": "eslint src test",
