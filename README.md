@@ -19,6 +19,10 @@ Pocket use a modified `oauth` flow for gaining an access token that looks like t
 
 ## Example Usage
 
+You can use this library with either a Promise or a Callback based interface
+
+### async/await
+
 ```javascript
 async function main() {
     try {
@@ -46,4 +50,31 @@ async function main() {
 }
 
 main();
+```
+
+### Callback
+
+```javascript
+var auth = require("pocket-auth");
+
+var consumerKey = "your-consumer-key";
+var redirectUri = "https://google.com";
+
+auth.fetchToken(consumerKey, redirectUri, {}, function(err, code) {
+    let uri = auth.getRedirectUrl(code.code, redirectUri);
+    console.log("Visit the following URL and click approve in the next 10 seconds:");
+    console.log(uri);
+
+    setTimeout(async function(){
+        auth.getAccessToken(consumerKey, code.code, function(err, r) {
+            if (err) {
+                console.log("You didn't click the link and approve the application in time");
+                return;
+            }
+
+            console.log(r);
+        });
+    }, 10000);
+});
+
 ```
