@@ -1,23 +1,24 @@
 {
-    "name": "pocket-auth",
-    "description": "Authentication library for getpocket.com",
-    "version": "1.0.0",
-    "scripts": {
-        "test": "nyc mocha",
-        "lint": "eslint src test",
-        "lint-fix": "eslint --fix src test"
-    },
-    "dependencies": {
-        "r2": "^2.0.0"
-    },
-    "devDependencies": {
-        "chai": "^4.1.2",
-        "eslint": "^4.9.0",
-        "eslint-config-prettier": "^2.6.0",
-        "eslint-plugin-prettier": "^2.3.1",
-        "mocha": "^4.0.1",
-        "nyc": "^11.2.1",
-        "prettier": "^1.7.4",
-        "sinon": "^4.0.1"
-    }
+  "name": "pocket-auth",
+  "description": "Authentication library for getpocket.com",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "nyc mocha",
+    "lint": "eslint src test",
+    "lint-fix": "eslint --fix src test"
+  },
+  "dependencies": {
+    "call-me-maybe": "^1.0.1",
+    "r2": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
+    "prettier": "^1.7.4",
+    "sinon": "^4.0.1"
+  }
 }

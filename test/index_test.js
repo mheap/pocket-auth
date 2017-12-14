@@ -84,7 +84,7 @@ describe("pocket-auth", function() {
         data
       ) {
         expect(err.message).to.eql("OH NOES");
-        expect(data).to.be.null;
+        expect(data).to.be.undefined;
         done();
       });
     });
@@ -170,7 +170,7 @@ describe("pocket-auth", function() {
         data
       ) {
         expect(err.message).to.eql("OH NOES");
-        expect(data).to.be.null;
+        expect(data).to.be.undefined;
         done();
       });
     });
