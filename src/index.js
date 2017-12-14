@@ -35,14 +35,14 @@ const getAccessToken = function(consumerKey, code, callback) {
 };
 
 const makeRequest = function(url, payload) {
-  return new Promise(async (resolve, reject) => {
+  return new Promise(function(resolve, reject) {
     r2
       .post(url, {
         json: payload,
         headers: { "X-Accept": "application/json" }
       })
-      .then(function(r) {
-        r.text.then(function(text) {
+      .response.then(function(r) {
+        r.text().then(function(text) {
           if (text[0] != "{") {
             return reject(new Error(text));
           }
