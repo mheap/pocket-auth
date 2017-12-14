@@ -20,7 +20,7 @@ describe("pocket-auth", function() {
         .expects("post")
         .once()
         .withArgs("https://getpocket.com/v3/oauth/request")
-        .returns({ text: "{}" });
+        .resolves({ text: Promise.resolve("{}") });
       const token = await pocketAuth.fetchToken(
         "consumer-key",
         "http://localhost",
@@ -109,7 +109,7 @@ describe("pocket-auth", function() {
         .expects("post")
         .once()
         .withArgs("https://getpocket.com/v3/oauth/authorize")
-        .returns({ text: "{}" });
+        .resolves({ text: Promise.resolve("{}") });
       const token = await pocketAuth.getAccessToken(
         "consumer-key",
         "http://localhost"
