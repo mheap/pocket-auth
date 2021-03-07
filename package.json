@@ -13,12 +13,12 @@
     "r2": "^2.0.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.3.3",
     "chai-as-promised": "^7.1.1",
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-prettier": "^2.3.1",
-    "mocha": "^8.2.1",
+    "mocha": "^8.3.1",
     "nyc": "^15.1.0",
     "prettier": "^1.7.4",
     "sinon": "^4.0.1"
